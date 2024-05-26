@@ -1,0 +1,91 @@
+---
+import Image from "astro/components/Image.astro"
+import perfil from "../../public/icons/perfil.svg";
+import logo from "../../public/img/LogoAutismoVeracruzSm.png"
+---
+
+<nav class="w-full flex justify-center items-center shadow-md">
+    <div class="w-4/5 flex justify-between items-center">
+        <nav class="navbar ">
+            <div class="navbar-start">
+                <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-md dropdown-content mt-3 z-[10] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Item 1</a></li>
+                    <li>
+                    <a>Parent</a>
+                    <ul class="p-2">
+                        <li><a>Submenu 1</a></li>
+                        <li><a>Submenu 2</a></li>
+                    </ul>
+                    </li>
+                    <li><a>Item 3</a></li>
+                </ul>
+                </div>
+                <a href="inicio">
+                    <Image src={logo} alt="logo-navbar" class="h-12 w-auto"/>
+                </a>
+            </div>
+            <div class="navbar-center hidden lg:flex z-[10]">
+                <ul class="menu menu-horizontal px-1">
+                <li>
+                    <details>
+                        <summary>Juegos</summary>
+                        <ul class="p-2">
+                        <li><a href="juegos">Juegos</a></li>
+                        <div class="divider m-0"></div>
+                        <li><a href="juegos/picturematch">PictureMatch</a></li>
+                        <li><a href="juegos/DEAMCOPLA">DEAMCOPLA</a></li>
+                        </ul>
+                    </details>
+                    </li>
+                <li><a>Autismo</a></li>
+                <li><a>Nosotros</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <div class="flex items-center">
+                    <div class="dropdown dropdown-end">
+                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                        <div class="indicator">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg>
+                            <!-- <span class="badge badge-sm indicator-item">1</span> -->
+                        </div>
+                        </div>
+                        <div tabindex="0" class="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow">
+                        <div class="card-body">
+                            <span class="font-bold text-lg">Notificaciones</span>
+                            <span class="text-pretty">Gracias por registrarte</span>
+                            <div class="card-actions">
+                                <button class="btn bg-secondary btn-block">Vamos</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="dropdown dropdown-end">
+                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                        <div class="w-10 rounded-full">
+                            <!-- <img alt="Tailwind CSS Navbar component" src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" /> -->
+                            <Image src={perfil} alt="perfil" class="h-20"/>
+                        </div>
+                        </div>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li>
+                            <a class="justify-between">
+                            Perfil
+                            </a>
+                        </li>
+                        <li><a>Ajustes</a></li>
+                        <li ><a class="hover:bg-red-200">Salir
+                            <!-- <span class="badge">New</span></a></li> -->
+                        </ul>
+                    </div>
+                    </div>
+            </div>
+            </nav>
+        </div>
+    </div>
+</nav> 
+

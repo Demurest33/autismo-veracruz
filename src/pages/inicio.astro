@@ -1,0 +1,51 @@
+---
+import LayoutHome from "../layouts/LayoutHome.astro";
+import Navbar from "../components/Navbar.astro";
+import Card from "../components/Card.astro";
+import autismo1 from "../../public/img/inicio/autismo.jpg";
+import autismo2 from "../../public/img/inicio/autismo2.jpg";
+import autismo3 from "../../public/img/inicio/autismo3.jpg";
+import autismo4 from "../../public/img/inicio/autismo4.webp";
+---
+<LayoutHome title="inicio">
+    <main class="lg:w-4/5 h-full mx-auto z-[1]">
+        <Card 
+            title="Autismo Veracruz A. C."
+            body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque, risus in faucibus venenatis, mauris diam porta ipsum, sodales auctor metus purus quis erat. Sed sit amet ex auctor, ornare ante non, facilisis nisl. Nam molestie volutpat ultrices. Aliquam mi enim, ultrices ac luctus vel, varius in tellus."
+            primaryHref="#"
+            secondaryHref="#"
+            imgSrc={autismo1}
+            primaryBtnText = "Ver más"
+            left={true}
+        />
+
+        <Card 
+            title="Misión y visión"
+            body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque, risus in faucibus venenatis, mauris diam porta ipsum, sodales auctor metus purus quis erat. Sed sit amet ex auctor, ornare ante non, facilisis nisl. Nam molestie volutpat ultrices. Aliquam mi enim, ultrices ac luctus vel, varius in tellus."
+            primaryHref="#"
+            secondaryHref="#"
+            imgSrc={autismo2}
+            primaryBtnText = "Ver más"
+            left={false}
+        />
+
+        <Card 
+            title="Estadísticas"
+            body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque, risus in faucibus venenatis, mauris diam porta ipsum, sodales auctor metus purus quis erat. Sed sit amet ex auctor, ornare ante non, facilisis nisl. Nam molestie volutpat ultrices. Aliquam mi enim, ultrices ac luctus vel, varius in tellus."
+            primaryHref="#"
+            imgSrc={autismo4}
+            primaryBtnText = "Ver más"
+            secondaryBtnText = "otra cosa"
+            left={true}
+        />
+
+        <Card 
+            title="Juegos"
+            body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque, risus in faucibus venenatis, mauris diam porta ipsum, sodales auctor metus purus quis erat. Sed sit amet ex auctor, ornare ante non, facilisis nisl. Nam molestie volutpat ultrices. Aliquam mi enim, ultrices ac luctus vel, varius in tellus."
+            primaryHref="juegos"
+            imgSrc={autismo3}
+            primaryBtnText = "Ver más"
+            left={false}
+        />
+    </main>
+</LayoutHome>
