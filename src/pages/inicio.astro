@@ -1,6 +1,5 @@
 ---
 import LayoutHome from "../layouts/LayoutHome.astro";
-import Navbar from "../components/Navbar.astro";
 import Card from "../components/Card.astro";
 import autismo1 from "../../public/img/inicio/autismo.jpg";
 import autismo2 from "../../public/img/inicio/autismo2.jpg";
@@ -10,13 +9,12 @@ import autismo4 from "../../public/img/inicio/autismo4.webp";
 <LayoutHome title="inicio">
     <main class="lg:w-4/5 h-full mx-auto">
 
-        <div class="text-sm breadcrumbs mt-12">
+        <div class="text-sm breadcrumbs mt-12 max-md:mx-10">
             <ul>
-              <li><a href="inicio" class="font-poppins">Inicio</a></li> 
-              <li><a href="juegos" class="font-bold font-poppins">Juegos</a></li>
+              <li><a href="inicio" class="font-bold font-poppins"></a></li>
+              <li><a href="inicio" class="font-bold font-poppins">Inicio</a></li>
             </ul>
         </div>
-
 
         <Card
         

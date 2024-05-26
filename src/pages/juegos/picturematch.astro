@@ -1,1 +1,52 @@
-<h1>Picture Match</h1>
+---
+import LayoutHome from "../../layouts/LayoutHome.astro";
+import Card from "../../components/Card.astro";
+import PictureMatch from "../../../public/img/juegos/pictureMatch.png";
+
+
+var title ="PictureMatch";
+var body = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque, risus in faucibus venenatis, mauris diam porta ipsum, sodales auctor metus purus quis erat. Sed sit amet ex auctor, ornare ante non, facilisis nisl. Nam molestie volutpat ultrices. Aliquam mi enim, ultrices ac luctus vel, varius in tellus.";
+var imgSrc = PictureMatch;
+var primaryHref = "#";
+var secondaryHref =  "#";
+var primaryBtnText = "Descargar APK";
+var secondaryBtnText = "Jugar Online";
+
+---
+
+<LayoutHome title="Juegos - picturematch">
+    <main class="lg:w-4/5 h-full mx-auto ">
+
+        <div class="text-sm breadcrumbs my-12 max-md:mx-10">
+            <ul>
+              <li><a href="/inicio" class="font-poppins">Inicio</a></li>
+              <li><a href="/juegos" class="font-poppins">Juegos</a></li>
+              <li><a href="/juegos/picturematch" class="font-bold font-poppins">PictureMatch</a></li>
+            </ul>
+        </div>
+
+        <div class="flex lg:flex-row flex-col rounded-xl overflow-hidden shadow-xl m-10">
+            <div class="card-image flex justify-center p-4">
+                <img src={imgSrc.src} alt={title} class=" object-cover h-full lg:max-w-xl max-md:max-w-xs rounded-xl" />
+            </div>
+            <div class="card-content mx-10 p-4 flex flex-col justify-around">
+                <div>
+                    <h2 class="lg:text-2xl max-md:text-xl font-bold mb-2 font-poppins">{title}</h2>
+                    <p class="mb-10 font-poppins">{body}</p>
+                </div>
+                <div class="flex space-x-2 justify-end ">
+    
+                    {(primaryBtnText&&primaryHref) ? <a href={primaryHref}>
+                        <button class="btn bg-secondary font-poppins">{primaryBtnText}</button>
+                    </a> : null}
+    
+                    {(secondaryBtnText&&secondaryHref) ? <a href={secondaryHref}>
+                        <button class="btn bg-primary font-poppins">{secondaryBtnText}</button>
+                    </a> : null}
+                    
+                </div>
+            </div>
+        </div>
+
+    </main>
+</LayoutHome>
