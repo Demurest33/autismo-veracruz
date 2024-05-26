@@ -15,21 +15,21 @@ const { title, body, imgSrc, primaryBtnText, secondaryBtnText, primaryHref, seco
 
 {
 	left? 
-	<div class="card flex lg:flex-row rounded overflow-hidden shadow-xl z-0">
+	<div class="card flex lg:flex-row rounded overflow-hidden shadow-xl m-10">
 		<div class="card-image lg:w-1/2">
 			<img src={imgSrc.src} alt={title} class="object-cover h-full w-full" />
 		</div>
 		<div class="card-content lg:w-1/2 p-4 flex flex-col justify-center">
-			<h2 class="lg:text-2xl max-md:text-xl font-bold mb-2">{title}</h2>
-			<p class="mb-10">{body}</p>
+			<h2 class="lg:text-2xl max-md:text-xl font-bold mb-2 font-poppins">{title}</h2>
+			<p class="mb-10 font-poppins">{body}</p>
 			<div class="flex space-x-2 justify-end">
 
 				{(primaryBtnText&&primaryHref) ? <a href={primaryHref}>
-					<button class="btn bg-secondary">{primaryBtnText}</button>
+					<button class="btn bg-secondary font-poppins">{primaryBtnText}</button>
 				</a> : null}
 
 				{(secondaryBtnText&&secondaryHref) ? <a href={secondaryHref}>
-					<button class="btn bg-primary">{secondaryBtnText}</button>
+					<button class="btn bg-primary font-poppins">{secondaryBtnText}</button>
 				</a> : null}
 				
 			</div>
@@ -38,16 +38,16 @@ const { title, body, imgSrc, primaryBtnText, secondaryBtnText, primaryHref, seco
 	:
 	<div class="card flex lg:flex-row rounded overflow-hidden shadow-lg">
 		<div class="card-content lg:w-1/2 p-4 flex flex-col justify-center">
-			<h2 class="lg:text-2xl max-md:text-xl font-bold mb-2">{title}</h2>
-			<p class="mb-10">{body}</p>
+			<h2 class="lg:text-2xl max-md:text-xl font-bold mb-2 font-poppins">{title}</h2>
+			<p class="mb-10 font-poppins">{body}</p>
 			<div class="flex space-x-2 justify-end">
 
 				{(primaryBtnText&&primaryHref) ? <a href={primaryHref}>
-					<button class="btn bg-secondary">{primaryBtnText}</button>
+					<button class="btn bg-secondary font-poppins">{primaryBtnText}</button>
 				</a> : null}
 
 				{(secondaryBtnText&&secondaryHref) ? <a href={secondaryHref}>
-					<button class="btn bg-primary">{secondaryBtnText}</button>
+					<button class="btn bg-primary font-poppins">{secondaryBtnText}</button>
 				</a> : null}
 
 			</div>

@@ -1,8 +1,72 @@
 ---
 import LayoutHome from "../../layouts/LayoutHome.astro";
+import CardSm from "../../components/CardSm.astro"
+import Picturematch from "../../../public/img/juegos/pictureMatch.png";
 ---
 
 <LayoutHome title="Juegos">
+    <main class="lg:w-4/5 h-full mx-auto bg-slate-100">
 
+        <div class="text-sm breadcrumbs my-12">
+            <ul>
+              <li><a href="inicio" class="font-poppins">Inicio</a></li> 
+              <li><a href="juegos" class="font-bold font-poppins">Juegos</a></li>
+            </ul>
+        </div>
 
+        <div class="flex flex-row flex-wrap w-full justify-center ">
+            <CardSm 
+                title="PictureMatch"
+                body="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                primaryHref="#"
+                secondaryHref="#"
+                imgSrc={Picturematch}
+                primaryBtnText = "Ver más"
+            />
+
+            <CardSm 
+                title="PictureMatch"
+                body="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                primaryHref="#"
+                secondaryHref="#"
+                imgSrc={Picturematch}
+                primaryBtnText = "Ver más"
+            />
+
+            <CardSm 
+                title="PictureMatch"
+                body="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                primaryHref="#"
+                secondaryHref="#"
+                imgSrc={Picturematch}
+                primaryBtnText = "Ver más"
+            />
+            <CardSm 
+                title="PictureMatch"
+                body="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                primaryHref="#"
+                secondaryHref="#"
+                imgSrc={Picturematch}
+                primaryBtnText = "Ver más"
+            />
+
+            <CardSm 
+                title="PictureMatch"
+                body="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                primaryHref="#"
+                secondaryHref="#"
+                imgSrc={Picturematch}
+                primaryBtnText = "Ver más"
+            />
+            <CardSm 
+            title="PictureMatch"
+            body="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            primaryHref="#"
+            secondaryHref="#"
+            imgSrc={Picturematch}
+            primaryBtnText = "Ver más"
+        />
+        </div>
+
+    </main>
 </LayoutHome>
